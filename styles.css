@@ -14,14 +14,29 @@ body {
   background-color: #f0f0f0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .container {
   text-align: center;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Ensure the container has a reasonable width */
-  max-width: 400px; /* Limit the maximum width for larger screens */
+  display: inline-block;
+  min-width: 50%;
+  max-width: fit-content;
+}
+
+.small-text {
+  font-size: 10px; /* Adjust size as needed */
+  display: block; /* Ensures it appears on a new line */
+  margin-top: 5px; /* Optional: Adds spacing between lines */
 }
 
 h1 {
@@ -52,6 +67,7 @@ button {
 #no-button {
   background-color: #f44336;
   color: white;
+  height: 50px;
 }
 
 button:hover {
