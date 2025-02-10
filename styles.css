@@ -31,30 +31,34 @@ body, h1, button {
     display: flex;
     justify-content: center;
     gap: 10px;
+    position: relative;
   }
   
-  button {
+  #yes-button {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #yes-button {
-    background-color: #4CAF50;
-    color: white;
-    position: absolute; /* Position the "Yes" button absolutely */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%);
+    position: relative; /* Make the "Yes" button a reference point for the "No" button */
   }
   
   #no-button {
     background-color: #f44336;
-    color: white;
-    position: relative;
-  }
+   color: white;
+    padding: 10px 20px;
+   font-size: 16px;
+    border: none;
+   border-radius: 5px;
+    cursor: pointer;
+   transition: background-color 0.3s ease;
+   position: absolute; /* Position the "No" button relative to the "Yes" button */
+   left: 100%; /* Place the "No" button to the right of the "Yes" button */
+    margin-left: 10px; /* Add some spacing between the buttons */
+}
   
   button:hover {
     opacity: 0.8;
