@@ -29,8 +29,8 @@ noButton.addEventListener('click', function(){
 
 });
 
-yesButton.addEventListener('click', function(){
-  heading.innerHTML = "I knew it, lets fucking do this! 💜"
+yesButton.addEventListener('click', function () {
+  heading.innerHTML = 'I knew it, lets fucking do this! 💜<br><span class="small-text">(I will ask you in person too, dont worry)</span>'
   yesButton.style.fontSize = '0px';
   yesButton.style.padding = '0px 0px';
   noButton.style.fontSize = '0px';
