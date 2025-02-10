@@ -45,11 +45,15 @@ body, h1, button {
   #yes-button {
     background-color: #4CAF50;
     color: white;
+    position: absolute; /* Position the "Yes" button absolutely */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%);
   }
   
   #no-button {
     background-color: #f44336;
     color: white;
+    position: relative;
   }
   
   button:hover {

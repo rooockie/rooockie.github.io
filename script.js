@@ -5,7 +5,7 @@ const noButton = document.getElementById('no-button');
 let yesButtonSize = 16;
 
 noButton.addEventListener('click', function(){
-  yesButtonSize += 5;
+  yesButtonSize += yesButtonSize;
   yesButton.style.fontSize = `${yesButtonSize}px`;
 
   const currentPadding = parseInt(window.getComputedStyle(yesButton).padding);
