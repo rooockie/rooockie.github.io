@@ -48,15 +48,15 @@ body, h1, button {
   
   #no-button {
     background-color: #f44336;
-   color: white;
+    color: white;
     padding: 10px 20px;
-   font-size: 16px;
+    font-size: 16px;
     border: none;
-   border-radius: 5px;
+    border-radius: 5px;
     cursor: pointer;
-   transition: background-color 0.3s ease;
-   position: absolute; /* Position the "No" button relative to the "Yes" button */
-   left: 100%; /* Place the "No" button to the right of the "Yes" button */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Position the "No" button relative to the "Yes" button */
+    left: 80%; /* Place the "No" button to the right of the "Yes" button */
     margin-left: 10px; /* Add some spacing between the buttons */
 }
   
